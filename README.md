@@ -17,7 +17,7 @@ This repository contains a minimal, educational implementation of RSA-based asym
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/asymmetric-crypto-basics.git
+    git clone https://github.com/hi-mulugeta/asymmetric-crypto-basics.git
     cd asymmetric-crypto-basics
     ```
 2.  The project uses Node.js core modules (`crypto`), so no `npm install` is required.
