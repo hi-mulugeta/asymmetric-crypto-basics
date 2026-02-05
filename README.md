@@ -39,3 +39,25 @@ const encrypted = encrypt(secretMessage, publicKey);
 const decrypted = decrypt(encrypted, privateKey);
 console.log(decrypted === secretMessage); // true
 ```
+
+### 2. Digital Signatures (Identity Verification)
+
+```javascript
+// Example: Signing and verifying a document
+const document = "Legal Contract v1.0";
+const signature = createSignature(document, privateKey);
+const isValid = verifySignature(document, signature, publicKey);
+console.log(isValid); // true if the document is authentic and unaltered
+```
+
+### Learning Objectives
+
+Through this implementation, you can solidify understanding of:
+
+- The fundamental difference between symmetric and asymmetric cryptography.
+
+- How public/private key pairs enable one-way encryption and secure key exchange.
+
+- How digital signatures provide proof of origin (authentication) and tamper detection (integrity).
+
+The practical use of the Node.js crypto module for these operations.
